@@ -10,3 +10,13 @@
     overflow: hidden;
 }
 
+.header{
+    background-color: #ffffff;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    box-sizing: border-box;
+}
+
