@@ -42,4 +42,13 @@ a {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
+.navegacion-sitio a {
+	transition: color 180ms ease;
+}
+
+.navegacion-sitio a:hover,
+.navegacion-sitio a:focus-visible {
+	color: var(--color-secundario);
+}
+
 
