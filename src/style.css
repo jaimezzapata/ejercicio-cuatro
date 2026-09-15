@@ -143,3 +143,48 @@ main {
 	object-fit: cover;
 }
 
+.pie-sitio {
+	width: 40%;
+	height: 100%;
+	padding: 0 3.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	color: var(--color-secundario);
+	font-size: 0.95rem;
+	line-height: 1.8;
+	text-align: right;
+}
+
+.pie-sitio p {
+	margin: 0;
+}
+
+@media (max-width: 760px) {
+	body,
+	main {
+		min-height: 100vh;
+		height: auto;
+	}
+
+	.encabezado-sitio {
+		height: auto;
+		min-height: 130px;
+		padding: 1.5rem 6%;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.marca {
+		font-size: 2rem;
+	}
+
+	.navegacion-sitio {
+		width: 100%;
+		justify-content: space-between;
+		gap: 0.8rem;
+		font-size: 0.72rem;
+	}
+
