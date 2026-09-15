@@ -1,1 +1,199 @@
 
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Contenido principal */
+.main-content {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F9FAFB;
+}
+
+.hero {
+    width: 60%;
+    height: 65vh;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.information {
+    width: 40%;
+    height: 65vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6%;
+}
+
+.information h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.information p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.information hr {
+    width: 70%;
+    margin: 2.5rem 0 1rem;
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+.information .date {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+/* Galería de miniaturas */
+.gallery {
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #E5E7EB;
+}
+
+.gallery img {
+    width: 33.333%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+    border-right: 1px solid #E5E7EB;
+}
+
+/* Footer */
+.footer {
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 4%;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer p {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #6B7280;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        min-height: 15vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header nav {
+        gap: 1rem;
+    }
+
+    .main-content {
+        height: auto;
+    }
+
+    .hero,
+    .information {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero img {
+        height: 350px;
+    }
+
+    .information {
+        padding: 3rem 2rem;
+    }
+
+    .gallery,
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    .footer {
+        padding: 2rem;
+        align-items: center;
+    }
+}
