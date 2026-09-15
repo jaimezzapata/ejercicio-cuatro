@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: #f8fafc; /* Slate 50 */
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', Georgia, serif, sans-serif;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -18,5 +18,24 @@
     align-items: center;
     border-bottom: 1px solid #e2e8f0;
     box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.logotext{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0f172a;
+ }
+
+.nav{
+    display: flex;
+    gap: 30px;
 }
 
