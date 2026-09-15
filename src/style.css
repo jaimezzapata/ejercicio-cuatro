@@ -188,3 +188,58 @@ main {
 		font-size: 0.72rem;
 	}
 
+.distribucion-exposicion {
+		height: auto;
+		min-height: 0;
+		flex-direction: column;
+	}
+
+	.media-principal,
+	.informacion-exposicion {
+		width: 100%;
+	}
+
+	.media-principal {
+		height: 48vh;
+		min-height: 280px;
+		padding: 1.2rem 6%;
+	}
+
+	.informacion-exposicion {
+		min-height: 440px;
+		padding: 3.5rem 6%;
+		border-left: 0;
+	}
+
+	.informacion-exposicion h1 {
+		margin-bottom: 1.8rem;
+		font-size: 2.6rem;
+	}
+
+	.fecha-exposicion {
+		margin-top: 2.5rem;
+	}
+
+	.galeria-pie {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.galeria-miniaturas,
+	.pie-sitio {
+		width: 100%;
+	}
+
+	.galeria-miniaturas {
+		height: 180px;
+	}
+
+	.miniatura {
+		padding: 0.8rem;
+	}
+
+	.pie-sitio {
+		min-height: 130px;
+		padding: 1.5rem 6%;
+	}
+}
