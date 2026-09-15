@@ -1,1 +1,245 @@
 
+body {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	background: var(--fondo-principal);
+	color: var(--color-texto);
+	font-family: var(--fuente-cuerpo);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.encabezado-sitio {
+	width: 100%;
+	height: 15vh;
+	min-height: 112px;
+	padding: 0 3.1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid var(--color-texto);
+	border-bottom: 1px solid var(--color-borde);
+}
+.marca {
+	font-family: var(--fuente-titulo);
+	font-size: clamp(2rem, 3.1vw, 3.45rem);
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+
+.navegacion-sitio {
+	display: flex;
+	align-items: center;
+	gap: clamp(1.7rem, 3.5vw, 3.5rem);
+	font-size: 0.92rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+.navegacion-sitio a {
+	transition: color 180ms ease;
+}
+
+.navegacion-sitio a:hover,
+.navegacion-sitio a:focus-visible {
+	color: var(--color-secundario);
+}
+
+
+main {
+	width: 100%;
+	height: 85vh;
+	min-height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.distribucion-exposicion {
+	width: 100%;
+	height: 65vh;
+	min-height: 455px;
+	display: flex;
+	border-bottom: 1px solid var(--color-borde);
+}
+.media-principal {
+	width: 60%;
+	height: 100%;
+	padding: 30px 6.1%;
+	background: var(--fondo-secundario);
+}
+.media-principal img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.informacion-exposicion {
+	width: 40%;
+	height: 100%;
+	padding: 0 3.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-left: 1px solid var(--color-borde);
+}
+
+.informacion-exposicion h1 {
+	margin: 0 0 3.2rem;
+	font-family: var(--fuente-titulo);
+	font-size: clamp(2.2rem, 3.3vw, 4rem);
+	font-weight: 400;
+	line-height: 1.08;
+}
+	max-width: 33rem;
+	margin: 0;
+	color: var(--color-secundario);
+	font-size: clamp(1rem, 1.25vw, 1.35rem);
+	line-height: 1.65;
+}
+
+.fecha-exposicion {
+	width: fit-content;
+	margin: 4rem 0 0;
+	padding-top: 1.6rem;
+	border-top: 1px solid var(--color-texto);
+	font-size: 0.95rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.galeria-pie {
+	width: 100%;
+	height: 20vh;
+	min-height: 145px;
+	display: flex;
+}
+.galeria-miniaturas {
+	width: 60%;
+	height: 100%;
+	display: flex;
+}
+
+.miniatura {
+	width: 33.3333%;
+	height: 100%;
+	margin: 0;
+	padding: 22px 3.45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid var(--color-borde);
+}
+
+.miniatura img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.pie-sitio {
+	width: 40%;
+	height: 100%;
+	padding: 0 3.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	color: var(--color-secundario);
+	font-size: 0.95rem;
+	line-height: 1.8;
+	text-align: right;
+}
+
+.pie-sitio p {
+	margin: 0;
+}
+
+@media (max-width: 760px) {
+	body,
+	main {
+		min-height: 100vh;
+		height: auto;
+	}
+
+	.encabezado-sitio {
+		height: auto;
+		min-height: 130px;
+		padding: 1.5rem 6%;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.marca {
+		font-size: 2rem;
+	}
+
+	.navegacion-sitio {
+		width: 100%;
+		justify-content: space-between;
+		gap: 0.8rem;
+		font-size: 0.72rem;
+	}
+
+.distribucion-exposicion {
+		height: auto;
+		min-height: 0;
+		flex-direction: column;
+	}
+
+	.media-principal,
+	.informacion-exposicion {
+		width: 100%;
+	}
+
+	.media-principal {
+		height: 48vh;
+		min-height: 280px;
+		padding: 1.2rem 6%;
+	}
+
+	.informacion-exposicion {
+		min-height: 440px;
+		padding: 3.5rem 6%;
+		border-left: 0;
+	}
+
+	.informacion-exposicion h1 {
+		margin-bottom: 1.8rem;
+		font-size: 2.6rem;
+	}
+
+	.fecha-exposicion {
+		margin-top: 2.5rem;
+	}
+
+	.galeria-pie {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.galeria-miniaturas,
+	.pie-sitio {
+		width: 100%;
+	}
+
+	.galeria-miniaturas {
+		height: 180px;
+	}
+
+	.miniatura {
+		padding: 0.8rem;
+	}
+
+	.pie-sitio {
+		min-height: 130px;
+		padding: 1.5rem 6%;
+	}
+}
