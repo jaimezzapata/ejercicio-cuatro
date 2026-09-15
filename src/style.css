@@ -133,20 +133,9 @@ body {
     background-color: #ffffff;
 }
 
-.gallery img {
-    width: 33.333%;
-    height: 100%;
-    padding: 15px;
-    object-fit: contain;
-    border-right: 1px solid #e5e7eb;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
 
-.gallery img:hover {
-    transform: scale(1.03);
-    opacity: 0.8;
-}
 
+/* Footer */
 /* Footer */
 .footer {
     width: 40%;
@@ -165,8 +154,14 @@ body {
     font-size: 0.8rem;
     color: #6b7280;
     line-height: 1.8;
+    text-align: right;
 }
 
+.footer p:first-child {
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 /* Responsive */
 @media (max-width: 768px) {
     .header {
