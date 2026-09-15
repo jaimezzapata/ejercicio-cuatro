@@ -179,10 +179,15 @@ body {
     }
 
     .header nav {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header a {
+    font-size: 0.75rem;
+}
 
     .main-content {
         height: auto;
