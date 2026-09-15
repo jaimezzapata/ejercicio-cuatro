@@ -1,4 +1,3 @@
-
 /* Estilos generales */
 * {
     box-sizing: border-box;
@@ -13,7 +12,7 @@ body {
     flex-wrap: wrap;
     font-family: Georgia, "Times New Roman", serif;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 /* Header */
@@ -24,7 +23,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
-    border-bottom: 1px solid #E5E7EB;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .header h1 {
@@ -44,6 +44,11 @@ body {
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.header a:hover {
+    opacity: 0.5;
 }
 
 /* Contenido principal */
@@ -52,9 +57,10 @@ body {
     height: 65vh;
     display: flex;
     flex-wrap: wrap;
-    background-color: #F9FAFB;
+    background-color: #f9fafb;
 }
 
+/* Imagen principal */
 .hero {
     width: 60%;
     height: 65vh;
@@ -70,26 +76,31 @@ body {
     object-fit: cover;
 }
 
+/* Información de la exposición */
 .information {
     width: 40%;
     height: 65vh;
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 6%;
+    background-color: #ffffff;
 }
 
 .information h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
     margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -1px;
 }
 
 .information p {
+    max-width: 320px;
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.7;
+    color: #555555;
 }
 
 .information hr {
@@ -111,15 +122,16 @@ body {
     height: 20vh;
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid #E5E7EB;
+    border-top: 1px solid #e5e7eb;
+    background-color: #ffffff;
 }
 
 .gallery img {
     width: 33.333%;
     height: 100%;
-    object-fit: contain;
     padding: 15px;
-    border-right: 1px solid #E5E7EB;
+    object-fit: contain;
+    border-right: 1px solid #e5e7eb;
 }
 
 /* Footer */
@@ -131,13 +143,14 @@ body {
     align-items: flex-end;
     justify-content: center;
     padding: 0 4%;
-    border-top: 1px solid #E5E7EB;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
 }
 
 .footer p {
     font-family: Arial, sans-serif;
     font-size: 0.8rem;
-    color: #6B7280;
+    color: #6b7280;
     line-height: 1.8;
 }
 
@@ -154,10 +167,13 @@ body {
 
     .header h1 {
         font-size: 1.8rem;
+        text-align: center;
     }
 
     .header nav {
         gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .main-content {
@@ -182,6 +198,10 @@ body {
         padding: 3rem 2rem;
     }
 
+    .information h2 {
+        font-size: 2.3rem;
+    }
+
     .gallery,
     .footer {
         width: 100%;
@@ -193,7 +213,7 @@ body {
     }
 
     .footer {
-        padding: 2rem;
         align-items: center;
+        padding: 2rem;
     }
 }
