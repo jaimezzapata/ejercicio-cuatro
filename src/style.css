@@ -1,1 +1,93 @@
+.body-galery{
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc; /* Slate 50 */
+    font-family: 'Playfair Display', Georgia, serif, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.header{
+    background-color: #ffffff;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.logotext{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0f172a;
+ }
+
+.nav{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #64748b; /* Slate 500 */
+    font-weight: 500;
+} 
+.main{
+    flex: 1;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    text-align: left;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.hero-text{
+    max-width: 600px;
+}
+.hero-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0f172a; /* Slate 900 */
+    margin-bottom: 20px;
+}
+.parrafo{
+    font-size: 1.1rem;
+    color: #475569; /* Slate 700 */
+    margin-bottom: 20px;
+}
+.gallery-section{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.miniature{
+   flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
