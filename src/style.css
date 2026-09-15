@@ -138,3 +138,16 @@ body {
 .miniatura img:hover {
     transform: scale(1.05);
 }
+.footer {
+    width: 40%;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1c1c1c;
+
+    text-align: center;
+}
