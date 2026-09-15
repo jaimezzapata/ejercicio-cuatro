@@ -61,3 +61,17 @@
     justify-content: space-between;
     gap: 30px;
 }
+.hero-text{
+    max-width: 600px;
+}
+.hero-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0f172a; /* Slate 900 */
+    margin-bottom: 20px;
+}
+.parrafo{
+    font-size: 1.1rem;
+    color: #475569; /* Slate 700 */
+    margin-bottom: 20px;
+}
