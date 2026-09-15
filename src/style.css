@@ -139,6 +139,12 @@ body {
     padding: 15px;
     object-fit: contain;
     border-right: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
 }
 
 /* Footer */
